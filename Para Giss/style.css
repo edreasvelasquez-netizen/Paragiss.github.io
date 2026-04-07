@@ -1,0 +1,118 @@
+body{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-family: "Playwrite IE", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.Parte1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Parte1_titulo{
+    text-shadow: 0.5px 0.5px 15px rgb(255, 255, 255), 
+    0.5px 0.5px 25px rgb(210, 203, 173), 
+    5px 5px 30px rgb(132, 0, 255); 
+    font-size: 50px;
+}
+
+/* Estilo del párrafo */
+.interactivo-premium {
+    color: #444; /* Color base apagado */
+    line-height: 2;
+    margin-left: auto;  /* Empuja desde la izquierda */
+    margin-right: auto; /* Empuja desde la derecha */
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Estilo de cada palabra individual */
+.interactivo-premium span {
+    cursor: default;
+    /* La transición de salida es lenta para dejar el "rastro" */
+    transition: color 0.6s ease, text-shadow 0.6s ease, transform 0.5s ease;
+}
+
+/* Efecto cuando el cursor pasa por encima */
+.interactivo-premium span:hover {
+    color: #D4AF37; /* Dorado */
+    transform: scale(1.2) translateY(-5px); /* Crece y sube un poco */
+    /* Brillo intenso */
+    text-shadow: 0 0 10px #D4AF37, 
+                 0 0 20px #D4AF37, 
+                 0 0 40px #ffffff;
+    /* La transición de entrada es rápida para seguir el cursor al instante */
+    transition: color 0.1s ease, text-shadow 0.1s ease, transform 0.1s ease;
+}
+/*Primera parte de la pagina (incluye el titulo y el parrafo)*/
+#Titulo2{
+    text-align: center;
+}
+
+.galeria-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; 
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tarjeta-imagen {
+    /* El 23% asegura que quepan 4 fotos por fila (4 x 23% = 92% + el espacio del gap) */
+    flex: 0 0 calc(23% - 10px) !important; 
+    max-width: 250px;
+    margin: 0 !important; /* Quitamos el margen por defecto de <figure> */
+    
+    background: #050505;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+    border: 2px solid #D4AF37;
+    outline: 1px solid #C0C0C0;
+    outline-offset: -6px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-imagen:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.tarjeta-imagen:hover img {
+    filter: grayscale(0%);
+}
+
+.tarjeta-imagen figcaption {
+    color: #C0C0C0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.75rem; /* Letra un poco más pequeña */
+    letter-spacing: 1px;
+}
+
+/*Parte de poemas*/
+#Titulo3{
+    text-align: center;
+    
+}
